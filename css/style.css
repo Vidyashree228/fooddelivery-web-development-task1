@@ -1,0 +1,332 @@
+html {
+	scroll-behavior: smooth;
+	user-select: none;
+}
+
+html,
+body {
+
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	overflow-y: scroll;
+
+}
+
+
+:root {
+	--navbar-height: 59px;
+}
+
+body {
+
+	font-family: "Rowdies", sans-serif;
+}
+
+#navbar {
+	display: flex;
+	align-items: center;
+}
+
+#logo {
+	margin: 9px 14px;
+
+
+}
+
+#logo img {
+
+	margin: -6px 15px;
+	height: 50px;
+
+}
+
+#navbar {
+	position: relative;
+	padding: -15px;
+	margin: 0px;
+	top: 0px;
+}
+
+#navbar ul {
+	display: flex;
+	
+}
+
+
+#navbar::before {
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	position: absolute;
+	opacity: 1;
+	z-index: -2;
+	top: 0px;
+	left: 0px;
+}
+
+
+#navbar ul li {
+	list-style: none;
+	font-size: 1.3rem;
+}
+
+#navbar ul li a {
+	display: block;
+	border-radius: 20px;
+	padding: 3px 22px;
+	text-decoration: none;
+	color: white;
+}
+
+#navbar ul li a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* Home Section */
+#home {
+	display: flex;
+	flex-direction: column;
+	padding: -90px 34px;
+	margin: 2px 23px;
+	align-items: center;
+	justify-content: center;
+	margin: 123px 65px;
+	height: 130px;
+	font-family: "Rowdies", sans-serif;
+	right: 0px;
+
+
+
+}
+
+#home::before {
+
+	content: "";
+	height: 80%;
+	width: 100%;
+	background: url("../bg/pexels-ella-olsson-1640777.jpg");
+	position: absolute;
+	opacity: 0.6;
+	z-index: -1;
+	background-repeat: no-repeat;
+	background-image: scroll;
+	background-position: center;
+	background-size: cover;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+}
+
+/* *{
+	margin: 0%;
+	padding: 0%; */
+/* } */
+#home h1 {
+	color: black;
+	text-align: center;
+	justify-content: center;
+	font-family: "Rowdies", sans-serif;
+}
+
+.home h4 {
+	color: black;
+	text-align: center;
+	justify-content: center;
+	font-family: "Rowdies", sans-serif;
+
+}
+
+#home {
+	color: black;
+	text-align: center;
+	justify-content: center;
+}
+
+#services {
+	margin: 34px;
+	display: flex;
+
+
+}
+
+#services .box1 {
+	border: 2px solid brown;
+	padding: -23px;
+	margin: -166px 47px;
+	border-radius: 28px;
+	background-color: rgb(230, 228, 226);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#services .box1 img {
+	height: 185px;
+	/* mix-blend-mode: darken; */
+	/* width: 360px; */
+	margin: auto;
+	display: block;
+
+}
+
+
+/* utiltiy class */
+.h-primary {
+	font-size: 2.8rem;
+	padding: 72px;
+	margin: 33px;
+}
+
+.h-secondary {
+	font-size: 2.3rem;
+	padding: 140px;
+}
+
+.h-tertiary {
+	font-size: 1.8rem;
+	padding: 40px;
+}
+
+.btn {
+	left: 488px;
+	position: absolute;
+	display: flex;
+	bottom: -85px;
+	padding: 13px 18px;
+	border: 2px solid white;
+	background-color: brown;
+	color: white;
+	margin: 17px;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+
+
+#home {
+	color: black;
+	text-align: center;
+	justify-content: center;
+}
+
+
+
+
+#clients {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: -50px;
+	margin: -116px;
+	font-family: "Rowdies", sans-serif;
+
+
+}
+
+#clients img {
+	height: 140px;
+	padding: -14px;
+	margin: -59px -108px;
+}
+
+.client-item {
+	padding: 111px;
+}
+
+#client-section {
+	padding: 41px;
+	margin: 148px -42px;
+	position: relative;
+}
+
+#client-section::before {
+	content: "";
+	position: absolute;
+	background: url("../bg/pexels-ella-olsson-1640772.jpg");
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.39;
+	
+
+}
+
+.center {
+	text-align: center;
+}
+
+/* contact section */
+#contact {
+	position: relative;
+	padding: 41px;
+	margin: 23px 34px;
+	top: -145px;
+	font-size: 1.5rem;
+	margin-left: -46px;
+	/* height: 49px; */
+}
+
+#contact::before {
+	content: "";
+	position: absolute;
+	background: url("../contact/contact-us-6933645_1280.jpg")no-repeat center center/cover;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.7;
+
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: -1px 20px;
+	margin-top: -129px;
+}
+
+#Contact-box input,
+#Contact-box textarea {
+	width: 100%;
+	padding: 0.5rem;
+	height: 88%;
+	border-radius: 9px;
+	font-size: 0.6rem;
+}
+
+#Contact-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	padding: 79px;
+	margin: 73px -64px;
+}
+
+#Contact-box label {
+	font-size: 1.2rem;
+}
+
+
+#Contact-box form {
+	width: 40%;
+	/* height: 34%; */
+
+}
+
+.h {
+	margin: 100px;
+}
